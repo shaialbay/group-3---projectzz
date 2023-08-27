@@ -1,0 +1,402 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Rubik&display=swap");
+
+:root {
+  --navbarColor: #6e563b;
+  --backgroundColor: #c4b09b;
+  --footerColor: #3c2317;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+/* navbar */
+.nav-bar {
+  background-color: var(--navbarColor);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.nav-bar ul {
+  display: flex;
+  list-style: none;
+  display: none;
+}
+
+.hamburger {
+  height: 40px;
+  width: 40px;
+  /* border: 1px solid white; */
+  padding: 5px;
+}
+
+.hamburger .box {
+  height: 3px;
+  width: 27px;
+  margin-top: 5px;
+  background-color: rgb(255, 255, 255);
+}
+/* end of navbar */
+
+body {
+  background-color: var(--backgroundColor);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.24), rgba(4, 9, 30, 0.267)),
+    url("/assets/img/homeBG.jpg");
+  height: 50vh;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-text p {
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 100px 20px 10px 35px;
+}
+
+.main-btn {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 13px;
+}
+.main-btn a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #ffffff;
+  transition: 0.5s;
+}
+
+.main-btn a:hover {
+  background-color: var(--backgroundColor);
+}
+
+.coffee1 a img {
+  height: 250px;
+  box-shadow: 1px 1px 5px 5px rgb(68, 47, 0);
+}
+
+.coffee1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 40px;
+  border: 1px solid black;
+}
+
+.coffee1 .coffee-name {
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin-top: 10px;
+}
+
+.coffee1 .coffee-price {
+  font-size: 1.3rem;
+}
+
+.coffee-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.sub {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin: 10px;
+  font-family: "Qwitcher Grypen", cursive;
+}
+
+.sub-sec {
+  margin-bottom: 20px;
+}
+
+.sub-btn {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.sub-btn a {
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 5px 20px;
+  color: black;
+  transition: 0.5s;
+}
+
+.sub-btn a:hover {
+  background-color: rgb(68, 47, 0);
+  color: white;
+}
+
+/* footer */
+footer {
+  background-color: var(--footerColor);
+  color: #fff;
+}
+
+.ftr {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.ftr1 h1,
+.ftr-2 h1 {
+  font-size: 10px;
+  text-align: center;
+}
+
+.ftr1 ul li a img,
+.ftr-2 ul li a img {
+  height: 18px;
+  margin-top: 5px;
+}
+
+.ftr ul li,
+.ftr-2 ul li {
+  list-style: none;
+}
+
+.f-links ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.f-links ul li a,
+.ftr-2 ul li a {
+  font-size: 10px;
+  text-decoration: none;
+  color: #ffffffad;
+}
+
+.f-payment ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+
+.f-logistics ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+}
+
+.f-payment ul li,
+.f-logistics ul li {
+  background-color: #ffffffad;
+  text-align: center;
+}
+
+.f-logistics ul {
+  text-align: center;
+}
+
+.ftr-sub {
+  display: flex;
+  justify-content: space-around;
+}
+
+.ftr-2 ul li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.f-paragraph {
+  padding: 10px;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.ftr-sub {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .coffee-items {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .main-text {
+    font-size: 1.5rem;
+  }
+
+  .main-btn {
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+
+  .f-links ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+  }
+
+  .f-payment ul,
+  .f-logistics ul {
+    margin-top: 15px;
+  }
+
+  .f-links ul li a {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .hamburger {
+    display: none;
+  }
+  .nav-bar ul {
+    display: flex;
+    gap: 15px;
+  }
+
+  .nav-bar ul li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .nav-bar ul li a:after {
+    display: block;
+    content: "";
+    border-bottom: solid 1px #ffffff;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+  }
+
+  .nav-bar ul li a:hover:after {
+    transform: scaleX(1);
+    transform-origin: 0% 50%;
+  }
+
+  main {
+    background-image: linear-gradient(
+        rgba(4, 9, 30, 0.24),
+        rgba(4, 9, 30, 0.267)
+      ),
+      url("/assets/img/bgTab.png");
+  }
+
+  .main-text p {
+    font-size: 2rem;
+  }
+
+  .main-btn {
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+
+  .coffee-items {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .f-links ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+  }
+
+  .f-payment ul,
+  .f-logistics ul {
+    margin-top: 15px;
+  }
+
+  .f-links ul li a {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1201px) {
+  .hamburger {
+    display: none;
+  }
+  .nav-bar ul {
+    display: flex;
+    gap: 15px;
+  }
+
+  .nav-bar ul li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .nav-bar ul li a:after {
+    display: block;
+    content: "";
+    border-bottom: solid 1px #ffffff;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+  }
+
+  .nav-bar ul li a:hover:after {
+    transform: scaleX(1);
+    transform-origin: 0% 50%;
+  }
+
+  main {
+    background-image: linear-gradient(
+        rgba(4, 9, 30, 0.24),
+        rgba(4, 9, 30, 0.267)
+      ),
+      url("/assets/img/bgTab.png");
+  }
+
+  .main-text p {
+    font-size: 3rem;
+    padding-top: 150px;
+  }
+
+  .main-btn {
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+
+  .coffee-items {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .f-links ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+  }
+
+  .f-payment ul,
+  .f-logistics ul {
+    margin-top: 15px;
+  }
+
+  .f-links ul li a {
+    font-size: 1rem;
+  }
+}
