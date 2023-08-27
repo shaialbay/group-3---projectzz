@@ -49,7 +49,7 @@ body {
 
 main {
   background-image: linear-gradient(rgba(4, 9, 30, 0.24), rgba(4, 9, 30, 0.267)),
-    url("/assets/img/homeBG.jpg");
+    url("assets/img/homeBG.jpg");
   height: 50vh;
   object-fit: cover;
   background-repeat: no-repeat;
